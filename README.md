@@ -1,2 +1,2 @@
-# Chatmaster
-It is my first chat appliction
+# krishnaclasses
+This is krishna Classes website on github, krishna Classes is Tuition in india 
