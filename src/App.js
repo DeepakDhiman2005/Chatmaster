@@ -88,7 +88,7 @@ function App() {
     <div className="tutor-card-container">
       <div className="tutor-card-under-side">
         <div className="RHS-tutor">
-          <img src="/favicon.ico" alt="image" />
+          <img src="/tuition_teacher_img.png" alt="image" />
           <p>Mr. Deepak sir!</p>
         </div>
         <div className="LHS-tutor">

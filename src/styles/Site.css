@@ -3,8 +3,8 @@
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
-    /* background-attachment: fixed; */
-    height: 75vh;
+    /* height: 75vh; */
+    padding: 7rem 0px 7rem 0px;
 }
 
 .intro-container{
@@ -92,7 +92,8 @@
 }
 
 .h-line{
-    height: 90%;
+    /* height: 90%; */
+    height: 40vh;
     width: 2px;
     background: #70809094;
 }
@@ -120,7 +121,7 @@
     padding-right: 45px;
 }
 .RHS-tutor>img{
-    border-radius: 100%;
+    border-radius: 5%;
 }
 .RHS-tutor>p{
     font-size: 18px;
@@ -176,7 +177,7 @@
         margin-bottom: 20px;
     }
 }
-@media only screen and (max-width: 350px){
+@media only screen and (max-width: 412px){
     .maincontainer{
         height: auto;
         padding: 10px 0px 15px 0px;

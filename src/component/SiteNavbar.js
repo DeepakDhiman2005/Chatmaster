@@ -93,10 +93,10 @@ function SiteNavbar() {
                         <option value="Class 8th">Class 8th</option>
                         <option value="Class 10th">Class 10th</option>
                         <option value="Class 11th Arts">Class 11th Arts</option>
-                        <option value="Class 11th Commerice">Class 11th Commerce</option>
+                        <option value="Class 11th Commerce">Class 11th Commerce</option>
                         <option value="Class 11th Science">Class 11th Science</option>
                         <option value="Class 12th Arts">Class 12th Arts</option>
-                        <option value="Class 12th Commerice">Class 12th Commerce</option>
+                        <option value="Class 12th Commerce">Class 12th Commerce</option>
                         <option value="Class 12th Science">Class 12th Science</option>
                         <option value="Marks of students">Marks of students</option>
                     </datalist>
