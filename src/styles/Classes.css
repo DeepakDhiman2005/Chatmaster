@@ -1,0 +1,133 @@
+.Classes-main-container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.Classes-title{
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    padding: 20px 0px 20px 12px;
+    font-family: sans-serif;
+    flex-direction: column;
+}
+.Classes-title>h4{
+    color: #8b8b8bf5;
+    font-size: 15px;
+    font-family: inherit;
+    margin-bottom: 2px;
+    font-weight: 100;
+}
+.Classes-title>h1{ 
+    margin: 5px 0px 5px 0px; 
+    font-family: unset;
+    font-weight: 100;
+}
+.Classes-title>h3{ 
+    margin: 0px;
+    font-family: system-ui;
+    font-weight: 330;
+}
+
+.Classes-container-content{
+    width: 80%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 20px;
+}
+
+
+.Cl-card{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 7rem;
+    background: whitesmoke;
+    padding: 12px;
+    border-radius: 4px;
+    margin-top: 12px;
+}
+.Cl-card>.Cl-logo{
+    width: 30%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(42deg, blue -30%, blueviolet, purple);
+    height: 100%;
+    font-size: 30px;
+    color: white;
+    border-radius: 4px;
+    box-shadow: 0px 0px 4px blueviolet;
+    font-family: sans-serif;
+}
+.Cl-content{
+    width: 60%;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    align-items: flex-start;
+    height: 100%;
+}
+.Cl-content-upperlair{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.Cl-content-upperlair>h2{
+    margin: 0px;
+    font-weight: 400;
+    color: #4c4c4ceb;
+}
+.Cl-content-upperlair>.button{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: transparent;
+    border: 1px solid black;
+    border-radius: 2px;
+    cursor: pointer;
+    padding: 6px;
+    color: black;
+    text-decoration: none;
+}
+.Cl-content-upperlair>.button>img{
+    width: 16px;
+    margin-right: 3px;
+}
+.Cl-content-upperlair>.button:hover{
+    color: white;
+    background: rgb(15, 15, 15);
+}
+
+.Cl-content-lowerlair{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.Classes-title>h1::selection, .Classes-title>h4::selection, .Classes-title>h3::selection,
+.Cl-content-upperlair>h2::selection, .lowlair-bottom::selection, .lowlair-top::selection,
+.lowlair-top>b::selection, .lowlair-bottom>b::selection, .Cl-content-upperlair>.button::selection,
+.Cl-content-upperlair>.button>img::selection, .Cl-logo::selection{
+    color: green;
+}
+
+@media only screen and (max-width: 670px) {
+    .Cl-card{ height: 9rem; }
+}
+@media only screen and (max-width: 440px){
+    .Cl-card{
+        height: 16rem;
+        flex-direction: column;
+    }
+    .Cl-card>.Cl-logo{
+        margin-bottom: 10px;
+        width: 100%;
+    }
+    .Cl-content{ width: 100%; }
+}

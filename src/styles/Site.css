@@ -1,0 +1,187 @@
+.maincontainer{
+    background-image: url('../../public/study_image.jpg');
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    /* background-attachment: fixed; */
+    height: 75vh;
+}
+
+.intro-container{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+}
+
+.introduction{
+    font-size: 20px;
+    text-align: center;
+    font-family: sans-serif;
+    display: flex;
+    justify-content: space-between;
+    align-items: stretch;
+    width: 40%;
+    flex-direction: column;
+}
+.introduction>h1{
+    font-weight: 500;
+    font-family: serif;
+    color: white;
+    filter: drop-shadow(0px 0px 1px black);
+}
+.introduction>.webimg1, .introduction>.webimg2{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+}
+.introduction>.webimg1>h2, .introduction>.webimg2>h2{
+    color: coral;
+    font-weight: 300;
+    font-family: inherit;
+}
+.introduction>.webimg1>p{
+    color: white;
+    filter: drop-shadow(1px 1px 1px black);
+}
+.introduction>.webimg2>a{
+    padding: 10px;
+    border-radius: 5px;
+    cursor: pointer;
+    background: green;
+    border: 1px solid green;
+    color: white;
+    font-weight: 200;
+    font-family: sans-serif;
+    text-decoration: none;
+    font-size: 14px;
+}
+
+.intro-button{
+    display: flex;
+    justify-content: center;
+    margin-top: 15px;
+    align-items: center;
+}
+.intro-button>.button{
+    padding: 10px;
+    border: none;
+    border-radius: 3px;
+    color: coral;
+    font-size: 18px;
+    cursor: pointer;
+    background-color: white;
+    border: 1px solid transparent;
+    text-decoration: none;
+}
+.intro-button>.button:first-child{ margin-right: 10px; }
+.intro-button>.button:hover{
+    border: 1px solid coral;
+    background-color: transparent;
+}
+
+.cards-container{
+    display: flex;
+    justify-content: space-around;
+    padding: 20px 15px 20px 15px;
+    align-items: center;
+    margin-top: 4rem;
+    transition: all 1.2s;
+}
+
+.h-line{
+    height: 90%;
+    width: 2px;
+    background: #70809094;
+}
+
+.tutor-card-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 20px 0px 20px 0px;
+}
+.tutor-card-under-side{
+    width: 80%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 15px;
+    box-shadow: 0px 0px 30px silver;
+}
+.RHS-tutor{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-right: 2px solid silver;
+    padding-right: 45px;
+}
+.RHS-tutor>img{
+    border-radius: 100%;
+}
+.RHS-tutor>p{
+    font-size: 18px;
+    font-weight: 400;
+    font-family: revert;
+}
+.LHS-tutor{
+    width: 50%;
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+}
+.LHS-tutor>svg{
+    width: 25px;
+    color: cornflowerblue;
+}
+.LHS-tutor>p{
+    padding: 10px;
+    font-size: 16px;
+    font-family: sans-serif;
+}
+
+.drop-plates-container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: aliceblue;
+    padding: 20px 0px 20px 0px;
+}
+
+@media only screen and (max-width: 750px) {
+    .intro-container{
+        flex-direction: column;
+        justify-content: space-evenly;
+    }
+    .introduction{
+        width: 80%;
+    }
+    .h-line{ display: none; }
+    .cards-container{
+        flex-direction: column;
+    }
+}
+@media only screen and (max-width: 510px){
+    .tutor-card-under-side{
+        flex-direction: column;
+    }
+    .RHS-tutor{
+        padding-right: 0px;
+        border-right: none;
+        border-bottom: 2px solid silver;
+        margin-bottom: 20px;
+    }
+}
+@media only screen and (max-width: 350px){
+    .maincontainer{
+        height: auto;
+        padding: 10px 0px 15px 0px;
+    }
+    .introduction>.webimg1, .introduction>.webimg2{
+        flex-direction: column;
+    }
+}
