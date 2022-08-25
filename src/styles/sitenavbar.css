@@ -15,6 +15,9 @@
 }
 
 .logo{ font-size: 30px; color: black; }
+.logo::selection, .logo>mark::selection{ 
+    background-color: transparent; color: none; 
+}
 .nav-links{
     /* width: 45%; */
     display: flex;

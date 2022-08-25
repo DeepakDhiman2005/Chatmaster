@@ -4,7 +4,7 @@ import '../styles/SiteContact.css'
 
 function Contact() {
   const [Name, setName] = useState("");
-  const [Email, setEmail] = useState("");
+  const [Phone, setPhone] = useState("");
   const [Message, setMessage] = useState("");
   const [SelClass, setSelClass] = useState("Select Class");
   const [DisplayChange, setDisplayChange] = useState("none");
@@ -14,26 +14,21 @@ function Contact() {
   function CancelForm(e){
     e.preventDefault();
     setName("");
-    setEmail("");
+    setPhone("");
     setMessage("");
     setSelClass("Select Class");
   }
   function SendForm(e){
     e.preventDefault();
-    if (Name === "" || Email === "" || Message === "" || SelClass === "Select Class") {
+    if (Name === "" || Phone === "" || Message === "" || SelClass === "Select Class") {
       alert("Sorry: The form is not fillup!");
     }else{
-      setDisplayChange("flex");
-      StartAnimation();
-      let obj={
-        N: Name,
-        E: Email,
-        M: Message,
-        S: SelClass
+      if(Phone.length !== 10 || Phone.indexOf("-") === 0) {
+        alert("Your Phone Number Digits is not equle of 10!");
+      }else{
+        setDisplayChange("flex");
+        StartAnimation();
       }
-      // console.log(
-      //   obj.N, obj.E, obj.M, obj.S
-      // )
     }
   }
 
@@ -56,6 +51,9 @@ function Contact() {
       setDisplayChange("none");
       setMarL(0);
       clearInterval(a);
+      let url = `https://api.whatsapp.com/send/?phone=8802370171&text=Name: ${Name}%20PhoneNo: ${Phone}%20Class: ${SelClass}%20Message: ${Message}`;
+
+      window.open(url, "_blank").focus();
     }, 2000);
   }
 
@@ -73,8 +71,8 @@ function Contact() {
         <input type="text" placeholder="Enter your Name: " value={Name} id="Name" onChange={(v)=>{
           setName(v.target.value);
         }} />
-        <input type="email" placeholder="Enter your Email: " value={Email} id="email" onChange={(v)=>{
-          setEmail(v.target.value);
+        <input type="number" placeholder="Enter your Phone: " value={Phone} id="Phone" onChange={(v)=>{
+          setPhone(v.target.value);
         }} />
         <select name="" id="" className='class-list' onChange={(v)=>{
           setSelClass(v.target.value);

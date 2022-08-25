@@ -105,26 +105,26 @@ function App() {
 
     <div className="drop-plates-container">
       <h1 id='readid'>About Tuition</h1>
-      <DropPlate title={"krishnaClasses Tuition"} 
-      content={"Krishnaclasses Tuition is the best tuition which is in Delhi, if you are looking for some good tuition then join Krishnaclasses"} />
+      <DropPlate title={"krishna Classes"} Fees={null}
+      content={"Krishna Classes is the best Tuition which is in Delhi, if you are looking for some good tuition then join Krishnaclasses"} />
 
-      <DropPlate title={"Fees of the Tuition"}
-      content={"6th to 8th ₹400 hundred rupe \n 9th to 10th ₹600 hundred rupe \n 11th to 12th ₹300 hundred per subject"} />
+      <DropPlate title={"Fees of the Krishna Classes"} content={"6th to 8th ₹400 hundred rupe 9th to 10th ₹600 hundred rupe 11th to 12th ₹300 hundred per subject"}
+      Fees={["6th to 8th ₹400 hundred rupe "," 9th to 10th ₹600 hundred rupe "," 11th to 12th ₹300 hundred per subject"]} />
 
-      <DropPlate title={"Study related"} 
-      content={"In Krishnaclasses, you will be taught all kinds of subjects, in this tuition, both Hindi media and English people can study well together."} />
+      <DropPlate title={"Study related"} Fees={null}
+      content={"In Krishna Classes, you will be taught all kinds of subjects, in this tuition, both Hindi media and English people can study well together."} />
 
-      <DropPlate title={"Best Subjects"} 
-      content={"By the way, all the subjects are taught well in Krishnaclasses. But the subject that children understand the most and quickly is math and social science."} />
+      <DropPlate title={"Best Subjects"} Fees={null}
+      content={"By the way, all the subjects are taught well in Krishna Classes. But the subject that children understand the most and quickly is math and social science."} />
 
-      <DropPlate title={"Tuition Location"} 
-      content={"Krishnaclasses tuition is in Harsh Vihar Delhi 93"} />
+      <DropPlate title={"Tuition Location"} Fees={null}
+      content={"Krishna Classes is in Harsh Vihar Delhi 1100093, mandoli"} />
 
-      <DropPlate title={"Teacher of krishnaClasses"} 
-      content={"Krishna Classes Tuition was started from 2007 to 2010. The name of the teacher of Krishna Classes Tuition is Deepak Sir. Will give you all the information from private to government."} />
+      <DropPlate title={"Teacher of krishnaClasses"} Fees={null}
+      content={"Krishna Classes was started from 2007 to 2010. The name of the teacher of Krishna Classes Tuition is Deepak Sir. Will give you all the information from private to government."} />
 
-      <DropPlate title={"students response"} 
-      content={"The students of Krishnaclasses love to read this, here they also do seven funs of studying, all the students' numbers are very good."} />
+      <DropPlate title={"students response"} Fees={null}
+      content={"The students of Krishna Classes love to read this, here they also do seven funs of studying, all the students' numbers are very good."} />
     </div>
   </>
 }

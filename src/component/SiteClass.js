@@ -6,10 +6,10 @@ function SiteClass() {
   return (
     <div className='Classes-main-container'>
       <div className="Classes-title">
-        <h4>Tuition {">"} Welcome to {"My tuition "} Website Phone no. +91 4xxx-xxx-xxx</h4>
+        <h4>Contact Tuition {">"} Contact {"With This "} Phone no. +91 8802370171</h4>
         <h1>Children from 6th to 12th can come</h1>
         {/* <h2>Tuition location is Harsh Vihar Delhi 93, Mandoli</h2> */}
-        <h3>My Tuition Location. this is my tuition location. this is my website location.</h3>
+        <h3>Tuition Location. Krishna Classes is in Harsh Vihar Delhi 1100093, Mandoli</h3>
       </div>
       <div className="Classes-container-content">
         <ClassesCards ID={"6th"} logoname={"6th"} title={"Class 6th"} subjects={"Math, Science, Hindi, English, Social Science."} />

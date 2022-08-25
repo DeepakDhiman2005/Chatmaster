@@ -18,7 +18,7 @@ function SiteFooter() {
         <div className="footer-center-side">
             <div className="foot-censd-top">
                 <img src="/location.png" alt="img" />
-                <p>Krishnaclasses tuition is in Harsh Vihar Delhi 93</p>
+                <p style={{textAlign: "center"}}>Krishna Classes is in Harsh Vihar Delhi 1100093</p>
             </div>
             <div className="foot-censd-center">
                 <img src="/phone.png" alt="img" />
@@ -37,10 +37,18 @@ function SiteFooter() {
                 Will give you all the information from private to government.
             </p>
             <div className="set-foot-icons">
-                <img src="/facebook_icon.png" alt="img" />
-                <img src="/instagram_icon.png" alt="img" />
-                <img src="/telegram_icon.png" alt="img" />
-                <img src="/twitter_icon.png" alt="img" />
+                <img src="/facebook_icon.png" alt="img" onClick={()=>{
+                    window.open("https://www.facebook.com", "_blank");
+                }}/>
+                <img src="/instagram_icon.png" alt="img" onClick={()=>{
+                    window.open("https://www.instagram.com", "_blank");
+                }}/>
+                <img src="/telegram_icon.png" alt="img" onClick={()=>{
+                    window.open("https://www.telegram.com", "_blank");
+                }}/>
+                <img src="/twitter_icon.png" alt="img" onClick={()=>{
+                    window.open("https://www.twitter.com", "_blank");
+                }}/>
             </div>
         </div>
     </footer>
